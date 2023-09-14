@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=REM:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins:wght@300;400;500&family=REM:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Mukta:wght@300&family=Poppins:wght@300;400;500&family=REM:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Lora&family=Mukta:wght@300&family=Poppins:wght@300;400;500&family=REM:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tri_head{
+    background-color: rgb(210, 210, 210);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+#head_first{
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#head_last{
+    font-family: 'Mukta', sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+#vivek{
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+#side{
+    font-family: 'Exo 2', sans-serif; 
+    width: 100%;
+    background-color: rgba(214, 214, 214, 0.867);
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#main_about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:rgb(225, 225, 225);
+    margin-right: 1.1rem;
+    width: 100%;
+    padding: 1rem;
+}
+.cont_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:rgba(225,225,225) ;
+    width: 30%;
+}
+#point{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+}
+#swami{
+    width: 100%;
+}
+#name_text{
+    font-family: 'Lora', serif;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 0.4rem;
+}
+#life_text{
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+    font-size: 0.85rem;
+    margin-bottom:1.1rem;
+}
+
+.main_text{
+    font-family: 'Lora', serif; 
+    margin-bottom: 0.6rem;
+}
+.bol{
+    font-family: 'Lora', serif;
+    font-weight: 600; 
+    margin-bottom: 0.1rem;
+}
+.bol_para{
+    font-family: 'Lora', serif;
+    margin-bottom: 0.6rem; 
+}
+#last_line{
+    font-family: 'Mukta', sans-serif;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+#last_line p{
+    font-weight: bolder;
+    color: white;
+    font-size: larger;
+    
+}
+@media screen and (max-width:400px){
+    #tri_head{
+        padding: 0.5rem;
+        margin-bottom: 0.3rem;
+        
+    }
+    #head_first{
+        font-size: 0.95rem;
+    } 
+    #head_last{
+        font-size: 0.76rem;
+    }
+    #vivek{
+        margin-bottom: 0.3rem;
+    }
+
+    #side{
+        margin-bottom: 0.3rem;
+        font-size:0.75rem ;
+        padding: 0.5rem;
+
+    }
+    #main_about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+    }
+    .cont{
+        margin-right: 0rem; 
+        margin-bottom: 0.3rem;
+        padding: 0.5rem;
+    }
+    .cont_side{
+        width: 100%;
+    }
+    #point{
+        padding: 0.5rem;
+    }
+    #name_text{
+        font-size: 0.98rem;
+        margin-bottom: 0.3rem;
+    }
+    #life_text{
+        font-size: 0.7rem;
+        margin-bottom:0.7rem;
+    }
+    .main_text{
+        font-size: 0.75rem;
+        margin-bottom: 0.4rem;
+    }
+    .bol{
+        font-size: 0.88rem; 
+    }
+    .bol_para{
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem; 
+    }
+    #last_line{
+        padding: 0.5rem;
+    }
+    #last_line p{
+        font-size: 0.76rem;
+        
+    }
+
+}

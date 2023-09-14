@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="nav-head">
+        <p>To-Do List Web App</p>
+        <div class="side-time">
+            <div class="time-zone" id="date"></div>
+            <div class="time-zone" id="time"></div>
+        </div>
+    </nav>
+        <div id="form-task">
+            <div class="input-add-task">
+                <p>Add Your Task</p>
+                <input type="text" id="task-input" name="task-input" placeholder="Enter Your task" class="task-input-all" >
+                <button id="add-btn" class="btn-task-all">Add Task</button>
+            </div>
+            <div class="input-edit-task" >
+                <p>Edit Task</p>
+                <input type="text" id="task-edit" name="task-edit" class="task-input-all">
+                <button class="btn-task-all" onclick="saveEdit()">Save</button>
+            </div>
+        </div>
+        <div class="first-div">
+            <h3 class="list-title">Pending List</h3>
+            <table class="pending-list">
+                <thead>
+                    <tr class="toprow-of-head-pending">
+                        <td class="head-pending">No.</td>
+                        <td class="head-pending">Date</td>
+                        <td class="head-pending">Time</td>
+                        <td class="head-pending">Tasks</td>
+                        <td class="head-pending">Complete</td>
+                        <td class="head-pending">Edit</td>
+                        <td class="head-pending">Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="t-body">
+                    <!-- <tr class="toprow-of-list-pending">
+                        <td class="list-pending">1</td>
+                        <td class="list-pending">31/10/2003</td> 
+                        <td class="list-pending">12:59:32</td>
+                        <td class="list-pending">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium ullam</td>
+                        <td class="list-pending"><button class="btn" style="background-color: rgb(59, 212, 59);"><i class="fa-solid fa-check"></i></button></td>
+                        <td class="list-pending"><button class="btn" style="background-color: rgb(66, 178, 222);"><i class="fa-solid fa-pen"></i></button></td>
+                        <td class="list-pending"><button class="btn" style="background-color: rgb(209, 65, 54);"><i class="fa-solid fa-xmark"></i></button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="second-div">
+            <h3 class="list-title">completed List</h3>
+            <table class="pending-list">
+                <thead>
+                    <tr class="toprow-of-head-pending">
+                        <td class="head-pending">No.</td>
+                        <td class="head-pending">Date</td>
+                        <td class="head-pending">Time</td>
+                        <td class="head-pending">Tasks</td>
+                        <td class="head-pending">Delete</td>
+                    </tr>
+                </thead>
+                <tbody  id="com-t-body">
+                    <!-- <tr class="toprow-of-list-pending">
+                        <td class="list-pending com">1</td>
+                        <td class="list-pending com">31/10/2003</td> 
+                        <td class="list-pending com">12:59:32</td>
+                        <td class="list-pending com">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium ullam</td>
+                        <td class="list-pending com"><button class="btn" style="background-color: rgb(126, 95, 41);"><i class="fa-solid fa-circle-exclamation"></i></button></td>
+                        <td class="list-pending com"><button class="btn" style="background-color: rgb(209, 65, 54);"><i class="fa-solid fa-xmark"></i></button></td>
+                    </tr> -->
+                </tbody>
+             </table> 
+    </div>
+    <div id="last"><h1>dfgg</h1></div>
+    <script src="scripts.js"></script>
+</body>
+</html>

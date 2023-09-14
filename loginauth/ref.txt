@@ -1,0 +1,101 @@
+const bigarray = [
+  ["str1","str2","str3","str4"],
+  ["stra1","stra2","stra3","stra4"],
+  ["strab1","strab2","strab3","strab4"]
+];
+
+const a="strab2";
+const b="strab4";
+
+function arestrPresent(arr,str1,str2) {
+  return  arr.includes(str1) && arr.includes(str2);
+}
+
+let strfound = false;
+
+for(const childarr of bigarray){
+  if(arestrPresent(childarr,a,b)){
+    strfound = true;
+    break;
+  }
+}
+
+if (strfound) {
+  console.log('present');
+}
+else{
+  console.log('not present');
+}
+let emails = document.getElementById('email-signup').value ;
+    let firstnames = document.getElementById('First-name').value ;
+    let lastnames = document.getElementById('Last-name').value ;
+    let crpass_s = document.getElementById('password-signup').value ;
+    let conpass_s = document.getElementById('confirm-password-signup').value ;
+  
+  let expression_email = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/ ;
+  let expression_pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/ ;
+  let expression_first = /^[a-zA-Z '.-]*$/ ;
+
+
+  let btn_sign = document.getElementById('submit-signup')
+let good=[];
+btn_sign.addEventListener("click",(e)=>{
+  e.preventDefault();
+  let emails = document.getElementById("email-signup").value;
+  let firstnames = document.getElementById("First-name").value;
+  let lastnames = document.getElementById("Last-name").value;
+  let crpass_s = document.getElementById("password-signup").value;
+  let conpass_s = document.getElementById("confirm-password-signup").value;
+  console.log('abc');
+  
+  if(good.length === 0){
+    good.push([emails,firstnames,lastnames,crpass_s,conpass_s]);
+    }
+
+    let a=emails;
+    let b=crpass_s;
+
+  function arestrPresent(arr,str1,str2) {
+    return  arr.includes(str1) && arr.includes(str2);
+  }
+  let strfound = false;
+  
+  for(const childarr of good){
+    if(arestrPresent(childarr,a,b)){
+      strfound = true;
+      break;
+    }
+  }
+  
+    if (strfound) {
+      console.log('present');
+    }
+    else{
+      console.log('not present');
+      good.push([emails,firstnames,lastnames,crpass_s,conpass_s]);
+    }
+    
+  })
+
+  
+  for(let i =0;i<good.length;i++){
+    if(good[i][0]==as && good[i][1]==bs){
+      console.log('login sucessfull');
+      alert('Log In successfull')
+      document.querySelectorAll('.signup-to').forEach(element => {
+        element.style.display = 'none'; 
+    })
+    document.querySelectorAll('.signin-to').forEach(element => {
+        element.style.display = 'none'; 
+    })
+    document.querySelectorAll('.page_access').forEach(element => {
+      element.style.display = 'flex'; 
+  })
+   }
+
+   else {
+      console.log('invalid id');
+      alert('Invalid id ! If you do not have any account please sign up by clicking below signup link..')
+  }
+
+  }

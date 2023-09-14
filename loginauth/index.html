@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="signup-to">
+        <div class="box1">
+            <h4>Sign Up</h4>
+            <div class="ele">
+                <label for="email-signup" class="ju">Email id : </label>
+                <input type="email" name="email-signup" id="email-signup" class="pass-signup" placeholder="Enter Email">
+            </div>
+            <div class="ele">
+                <label for="password-signup" class="ju">Create Password : </label>
+                <input type="password" name="password-signup" id="password-signup" placeholder="Create Password" class="pass-signup">
+            </div>
+
+            <div class="el">
+                <input type="checkbox" id="showPassword" class="show">
+                <label for="showPassword" class="check">Show Password</label>
+            </div>
+            
+            <button id="submit-signup" class="sub-signup">Sign Up</button>
+            
+            <div class="last_te">
+                <p>Already have an account? <button class="have">Log In</button></p>
+            </div>
+        </div>
+    </form>
+    <form class="signin-to">
+        <div class="box1 box2">
+
+            <h4>Log In</h4>
+            <div class="ele">
+                <label for="email-login" class="ju">Email id : </label>
+                <input type="email" name="email-login" id="email-login" class="pass-signup" placeholder="Enter Email">
+            </div>
+            <div class="ele">
+                <label for="password-login" class="ju">Password : </label>
+                <input type="password" name="password-login" id="password-login" placeholder="Enter Password" class="pass-signup">
+            </div>
+            <div class="el">
+                <input type="checkbox" id="showPasswordl" class="show">
+                <label for="showPasswordl" class="check">Show Password</label>
+            </div>
+        
+        <button id="submit-login" class="sub-signup but">Log In</button>
+        
+        <div class="last_te">
+            <p>Don't have an account? <button class="dont-have">Sign Up</button></p>
+        </div>
+    </div>
+    </form>
+    <div class="page_access">
+        <div class="nav">
+            <div class="nav_te">
+                Welcome
+            </div>
+            <div>
+                <button id="m-s">Sign Up</button>
+                <button id="m-l">Log In</button>
+            </div>
+        </div>
+        <div class="main">
+                <p>Hii you successfully log in to this page and access it.</p>
+                <p>Now if you want to access this page with another id please click signup or login button above.</p>
+        </div>
+            
+    </div>
+        <script type="module" src="script.js" ></script>
+
+</body>
+</html>
